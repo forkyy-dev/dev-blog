@@ -25,8 +25,7 @@ const PostWrapper = styled.div`
 `
 
 const Date = styled.p`
-  margin-left: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 14.4px;
   color: ${props => props.theme.colors.tertiaryText};
 `
@@ -84,12 +83,10 @@ const PostList = ({ postList }) => {
         return (
           <React.Fragment key={JSON.stringify({ slug, date })}>
             <PostWrapper>
-              <Row>
-                <Title size="bg">
-                  <Link to={slug}>{title}</Link>
-                </Title>
-                <Date>{date}</Date>
-              </Row>
+              <Title size="bg">
+                <Link to={slug}>{title}</Link>
+              </Title>
+              <Date>{date}</Date>
               <Excerpt>{excerpt}</Excerpt>
               <TagList tagList={tags} />
             </PostWrapper>
