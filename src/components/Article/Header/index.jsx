@@ -15,10 +15,10 @@ const Wrapper = styled.div`
 `
 
 const ArticleTitle = styled.h1`
-  margin-bottom: 25.6px;
+  margin-bottom: 20px;
   line-height: 1.2;
-  font-size: 44.8px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 600;
   color: ${props => props.theme.colors.text};
 `
 

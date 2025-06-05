@@ -3,15 +3,15 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const TagListWrapper = styled.div`
-  margin-bottom: 16px;
+  margin-bottom: 0px;
   word-break: break-all;
 `
 
 const TagLink = styled.div`
   display: inline-block;
-  padding: 9.6px 11.2px;
-  margin-right: 8px;
-  margin-bottom: 8px;
+  padding: 7px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   border-radius: 50px;
   background-color: ${props =>
     props.selected

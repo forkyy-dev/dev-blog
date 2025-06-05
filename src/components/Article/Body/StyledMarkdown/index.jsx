@@ -47,12 +47,12 @@ const StyledMarkdown = styled.div`
 
   & h2 {
     margin-top: 50px;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   & h3 {
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   & h4,

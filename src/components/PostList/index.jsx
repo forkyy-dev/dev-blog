@@ -25,17 +25,24 @@ const PostWrapper = styled.div`
 `
 
 const Date = styled.p`
-  margin-bottom: 16px;
+  margin-left: 10px;
+  margin-bottom: 5px;
   font-size: 14.4px;
   color: ${props => props.theme.colors.tertiaryText};
 `
 
 const Excerpt = styled.p`
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   line-height: 1.7;
   font-size: 15px;
   color: ${props => props.theme.colors.secondaryText};
   word-break: break-all;
+`
+
+const Row = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
 `
 
 const checkIsScrollAtBottom = () => {
@@ -77,16 +84,18 @@ const PostList = ({ postList }) => {
         return (
           <React.Fragment key={JSON.stringify({ slug, date })}>
             <PostWrapper>
-              <Title size="bg">
-                <Link to={slug}>{title}</Link>
-              </Title>
-              <Date>{date}</Date>
+              <Row>
+                <Title size="bg">
+                  <Link to={slug}>{title}</Link>
+                </Title>
+                <Date>{date}</Date>
+              </Row>
               <Excerpt>{excerpt}</Excerpt>
               <TagList tagList={tags} />
             </PostWrapper>
 
             {postCount - 1 !== i && postList.length - 1 !== i && (
-              <Divider mt="48px" mb="32px" />
+              <Divider mt="20px" mb="20px" />
             )}
           </React.Fragment>
         )
