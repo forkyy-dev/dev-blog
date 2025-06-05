@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://forkyy-dev.site/dev-blog/sitemap-index.xml
+Sitemap: https://forkyy-dev.site/sitemap-index.xml
 Host: https://forkyy-dev.site
