@@ -1,6 +1,6 @@
 module.exports = {
-  title: "호키포키",
-  description: "안녕하세요 백엔드 개발자 함석호의 블로그입니다.",
+  title: "Forkyy",
+  description: "안녕하세요 백엔드 개발자 함석호입니다.",
   author: "Forkyy",
   siteUrl: "https://forkyy-dev.site/",
   links: {
